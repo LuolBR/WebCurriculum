@@ -3,7 +3,113 @@
     font-family: 'Mulish', sans-serif;
 */
 
+/*
+<span>Photo by <a href="https://unsplash.com/@ffstop?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Fotis Fotopoulos</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>*/
+
+$fontColor1: rgb(255, 255, 255);
+$textShadow1: .2rem .2rem rgba(0, 0, 0, .4);
+
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
 
 @import url(https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative; 
+    
+}
+
+.img-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: .5;
+        animation: zoom 5s;
+    }
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.banner {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    
+    h1 {
+        color: $fontColor1;
+        font-size: 3.8rem;
+        font-family: 'Baloo Da 2', cursive;
+        font-weight: 200;
+        text-shadow: $textShadow1;
+        line-height: 3.5rem;
+        margin-bottom: 2rem;
+        opacity: 0;
+        animation: moveBanner 1s .5s forwards;
+        
+    }
+
+    p {
+        font-family: 'Josefin Sans', sans-serif;
+        color: $fontColor1;
+        font-size: 2.5rem;
+        font-weight: 200;
+        text-shadow: $textShadow1;
+        margin-bottom: 2rem;
+        opacity: 0;
+        animation: moveBanner 1s .7s forwards;
+    }
+
+    button {
+        font-family: 'Mulish', sans-serif;
+        color: rgba(255, 255, 255, .7);
+        text-transform: uppercase;
+        letter-spacing: .1;
+        background: #322770;  
+        background: -webkit-linear-gradient(to left, #a044ff, #322770);  
+        background: linear-gradient(to left, #a044ff, #322770);  
+        padding: 1rem 3rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        opacity: 0;
+        animation: moveBanner 1s .9s forwards;
+
+        &:hover {
+            opacity: .9;
+        } 
+    }
+}
+
+@keyframes moveBanner {
+    0% {
+        transform: translateY(10rem) rotateY(-30deg);
+    }
+
+    100% {
+        transform: translateY(0) rotateY(0);
+        opacity: 1;
+    }
+}
+
 
