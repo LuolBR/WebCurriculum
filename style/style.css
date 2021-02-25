@@ -74,15 +74,15 @@
   background-color: white;
   -webkit-box-shadow: 0.1rem 0.1rem 1px black;
           box-shadow: 0.1rem 0.1rem 1px black;
-  -webkit-transition: -webkit-transform .5s linear;
-  transition: -webkit-transform .5s linear;
-  transition: transform .5s linear;
-  transition: transform .5s linear, -webkit-transform .5s linear;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
 }
 
 .show-menu #line1 {
-  -webkit-transform: rotate(45deg) translate(0.2rem, 0.4rem);
-          transform: rotate(45deg) translate(0.2rem, 0.4rem);
+  -webkit-transform: rotate(45deg) translate(0.3rem, 0.4rem);
+          transform: rotate(45deg) translate(0.3rem, 0.4rem);
 }
 
 .show-menu #line2 {
@@ -91,8 +91,8 @@
 }
 
 .show-menu #line3 {
-  -webkit-transform: rotate(-45deg) translate(0.3rem, -0.4rem);
-          transform: rotate(-45deg) translate(0.3rem, -0.4rem);
+  -webkit-transform: rotate(-45deg) translate(0.2rem, -0.4rem);
+          transform: rotate(-45deg) translate(0.2rem, -0.4rem);
 }
 
 header {

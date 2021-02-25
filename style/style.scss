@@ -75,12 +75,12 @@ $textShadow1: .2rem .2rem rgba(0, 0, 0, .4);
     height: .1rem;
     background-color: rgb(255, 255, 255);
     box-shadow: .1rem .1rem 1px rgb(0,0,0);
-    transition: transform .5s linear;
+    transition: transform .2s;
 }
 
 .show-menu #line1 {
     
-    transform: rotate(45deg) translate(.2rem, .4rem);
+    transform: rotate(45deg) translate(.3rem, .4rem);
 }
 
 .show-menu #line2 {
@@ -90,7 +90,7 @@ $textShadow1: .2rem .2rem rgba(0, 0, 0, .4);
 
 .show-menu #line3 {
     
-    transform: rotate(-45deg) translate(.3rem, -.4rem);
+    transform: rotate(-45deg) translate(.2rem, -.4rem);
 }
 
 header {
